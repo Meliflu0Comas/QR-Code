@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code Generator - Quick Start Guide</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 50px auto; 
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .step {
+            background: #e3f2fd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 4px solid #2196f3;
+        }
+        code {
+            background: #f1f1f1;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🎯 QR Code Generator Setup</h1>
+        <p>You're seeing this because you need to set up the Python server for advanced features.</p>
+        
+        <h2>Option 1: Quick Start (Recommended)</h2>
+        <div class="step">
+            <strong>Step 1:</strong> Double-click the <code>start_server.bat</code> file in this folder
+        </div>
+        <div class="step">
+            <strong>Step 2:</strong> Wait for "Running on http://127.0.0.1:5000" message
+        </div>
+        <div class="step">
+            <strong>Step 3:</strong> Open <code>http://localhost:5000</code> in your browser
+        </div>
+
+        <h2>Option 2: Manual Setup</h2>
+        <div class="step">
+            <strong>Step 1:</strong> Install Python from <a href="https://python.org">python.org</a>
+        </div>
+        <div class="step">
+            <strong>Step 2:</strong> Open Command Prompt in this folder and run:<br>
+            <code>python -m pip install -r requirements.txt</code>
+        </div>
+        <div class="step">
+            <strong>Step 3:</strong> Start the server:<br>
+            <code>python app.py</code>
+        </div>
+        <div class="step">
+            <strong>Step 4:</strong> Open <code>http://localhost:5000</code> in your browser
+        </div>
+
+        <h2>Basic Preview Available Now!</h2>
+        <p>Even without Python, you can use the basic QR code generator:</p>
+        <a href="templates/index.html" class="button">Open Basic QR Generator</a>
+        
+        <h2>Features</h2>
+        <ul>
+            <li>✅ <strong>Basic Preview:</strong> Works without Python server</li>
+            <li>🎨 <strong>Styled QR Codes:</strong> Requires Python server</li>
+            <li>🔧 <strong>Multiple Styles:</strong> Square, Rounded, Circle, Gapped</li>
+            <li>🌈 <strong>Colors & Gradients:</strong> Full customization</li>
+            <li>💾 <strong>Download:</strong> Save as PNG files</li>
+        </ul>
+    </div>
+</body>
+</html>
