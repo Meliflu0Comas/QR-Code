@@ -1,0 +1,14 @@
+# 📋 COMANDOS PARA GITHUB
+
+# Después de crear el repositorio en github.com, ejecuta:
+
+git remote add origin https://github.com/TU-USUARIO/qr-code-generator.git
+git branch -M main
+git push -u origin main
+
+# Reemplaza "TU-USUARIO" con tu nombre de usuario de GitHub
+
+# Ejemplo:
+# git remote add origin https://github.com/melissadev/qr-code-generator.git
+# git branch -M main  
+# git push -u origin main
