@@ -16,14 +16,14 @@ A modern, web-based QR code generator with multiple styling options and real-tim
 
 ## 🚀 Live Demo
 
-**Deployed on Railway:** [Visit App](https://your-qr-generator.railway.app)
+**Deployed on PythonAnywhere:** [Visit App](https://yourusername.pythonanywhere.com)
 
 ## 🛠️ Technologies
 
 - **Backend:** Python Flask
 - **Frontend:** HTML5, CSS3, Vanilla JavaScript
 - **QR Generation:** qrcode library with PIL/Pillow
-- **Deployment:** Railway
+- **Deployment:** PythonAnywhere
 
 ## 🔧 Local Development
 
@@ -49,14 +49,43 @@ http://localhost:5000
 - qrcode[pil] 7.4.2
 - Pillow 10.0.1
 
-## 🚀 Deployment
+## 🚀 Deployment on PythonAnywhere
 
-This app is configured for easy deployment on:
+### Step 1: Upload Code
+```bash
+# On PythonAnywhere Bash console
+git clone https://github.com/Meliflu0Comas/QR-Code.git
+cd QR-Code
+```
 
-- **Railway** (recommended)
-- **Heroku**
-- **Render**
-- **PythonAnywhere**
+### Step 2: Install Dependencies
+```bash
+# Create virtual environment
+mkvirtualenv --python=/usr/bin/python3.10 qr-generator
+pip install -r requirements.txt
+```
+
+### Step 3: Configure Web App
+1. Go to **Web** tab in PythonAnywhere dashboard
+2. Click **Add a new web app**
+3. Choose **Manual configuration** → **Python 3.10**
+4. Set **Source code:** `/home/yourusername/QR-Code`
+5. Set **WSGI configuration file:** `/home/yourusername/QR-Code/wsgi.py`
+
+### Step 4: Update WSGI File
+Edit the `wsgi.py` file and replace `yourusername` with your actual PythonAnywhere username.
+
+### Step 5: Static Files (Optional)
+Add static files mapping:
+- **URL:** `/static/`  
+- **Directory:** `/home/yourusername/QR-Code/static/`
+
+### Step 6: Reload Web App
+Click **Reload** on the Web tab and visit `https://yourusername.pythonanywhere.com`
+
+## 🔧 Alternative: Railway Deployment
+
+This app is also configured for Railway deployment with the included `Procfile`.
 
 ## 📄 License
 
